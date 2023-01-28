@@ -3,7 +3,10 @@
     <nav>
       <router-link :to="{ name: 'event-list' }">List</router-link> |
       <router-link :to="{ name: 'event-show' }">Show Event #1</router-link> |
-      <router-link :to="{ name: 'event-create' }">Create</router-link>
+      <router-link :to="{ name: 'event-create' }">Create</router-link> |
+      <router-link :to="{ name: 'user', params: { username: 'Steve' } }">
+        Steve</router-link
+      >
     </nav>
     <router-view />
   </div>

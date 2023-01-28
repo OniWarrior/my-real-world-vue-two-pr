@@ -3,7 +3,7 @@ import VueRouter from "vue-router";
 import EventCreate from "../views/EventCreate.vue";
 import EventShow from "../views/EventShow.vue";
 import EventList from "../views/EventList.vue";
-import User from "../views/User.vue";
+import User from "../views/UserComp.vue";
 
 
 Vue.use(VueRouter);
