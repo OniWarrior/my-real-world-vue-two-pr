@@ -19,6 +19,7 @@ const routes = [
   },
   {
     path: "/event/create",
+    name: "event-create",
   }
 ];
 
