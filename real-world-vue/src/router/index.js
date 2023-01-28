@@ -13,7 +13,7 @@ const routes = [
     component: EventList,
   },
   {
-    path: "/about",
+    path: "/event",
     name: "about",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
