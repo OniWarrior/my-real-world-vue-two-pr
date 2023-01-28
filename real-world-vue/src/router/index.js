@@ -17,6 +17,9 @@ const routes = [
     name: "event-show",
     component: EventShow,
   },
+  {
+    path: "/event/create",
+  }
 ];
 
 const router = new VueRouter({
