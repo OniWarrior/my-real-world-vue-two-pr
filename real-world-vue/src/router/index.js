@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import EventCreate from "../views/EventCreate.vue";
+import EventShow from "../views/EventShow.vue";
 
 Vue.use(VueRouter);
 
