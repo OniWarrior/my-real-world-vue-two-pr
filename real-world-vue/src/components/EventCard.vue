@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h4>{{ title }}</h4>
+    <h4>{{ event.title }}</h4>
   </div>
 </template>
 
