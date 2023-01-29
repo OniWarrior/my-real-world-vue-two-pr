@@ -1,12 +1,14 @@
 <template>
-  <h1></h1>
+  <div>
+    <h1>{{}}</h1>
+  </div>
 </template>
 
 <script>
 export default {
   data() {
     return {
-      quote: "Live life for yourself",
+      title: "Beach Cleanup",
     };
   },
 };
