@@ -16,6 +16,15 @@ export default {
       type: [Number, String],
       default: 24,
     },
+    computed: {
+      svg() {
+        return feather.icons[this.name].toSVG({
+          class: "icon",
+          width: this.width,
+          height: this.height,
+        });
+      },
+    },
   },
 };
 </script>
