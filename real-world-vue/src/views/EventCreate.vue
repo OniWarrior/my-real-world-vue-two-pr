@@ -12,6 +12,9 @@ export default {
     userName() {
       return this.$store.state.user.name;
     },
+    userId() {
+      return this.$store.state.user.id;
+    },
   },
 };
 </script>
