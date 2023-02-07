@@ -14,7 +14,11 @@ export default new Vuex.Store({
       'food',
       'community']
   },
-  getters: {},
+  getters: {
+    catLength: state => {
+      return state.categories.length
+    }
+  },
   mutations: {},
   actions: {},
   modules: {},
