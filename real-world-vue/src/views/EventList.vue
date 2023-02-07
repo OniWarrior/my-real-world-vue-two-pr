@@ -1,7 +1,11 @@
 <template>
   <div>
     <h1>Events Listing</h1>
-    <EventCard></EventCard>
+    <EventCard
+      v-for="event in events"
+      :key="event.id"
+      :event="event"
+    ></EventCard>
     <BaseIcon />
   </div>
 </template>
