@@ -14,11 +14,16 @@ export default {
   components: {
     EventCard,
   },
+  data() {
+    return {
+      events: [],
+    };
+  },
   created() {
     axios
       .get(" http://localhost:3000/events")
-      .then((respons) => {
-        console.log(respons.data);
+      .then((response) => {
+        this.events = response.data;
       })
       .catch((error) => {
         console.log("There was an error" + error.response);
