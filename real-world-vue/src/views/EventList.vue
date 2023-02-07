@@ -15,9 +15,14 @@ export default {
     EventCard,
   },
   created() {
-    axios.get(" http://localhost:3000/events").then((respons) => {
-      console.log(respons.data);
-    });
+    axios
+      .get(" http://localhost:3000/events")
+      .then((respons) => {
+        console.log(respons.data);
+      })
+      .catch((error) => {
+        console.log("There was an error" + error.response);
+      });
   },
 };
 </script>
