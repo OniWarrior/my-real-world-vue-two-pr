@@ -11,12 +11,13 @@
 
 
 <script>
-import { mapState } from "vuex";
+import { mapState, mapGetters } from "vuex";
 export default {
   computed: {
     catLength() {
       return this.$store.getters.catLength;
     },
+    ...mapGetters(["getEventByID"]),
     ...mapState(["user", "categories"]),
   },
 };
