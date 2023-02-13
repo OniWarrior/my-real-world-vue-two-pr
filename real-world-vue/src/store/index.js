@@ -12,8 +12,15 @@ export default new Vuex.Store({
       'housing',
       'education',
       'food',
-      'community']
+      'community'],
+    events: [
+      { id: 1, title: '...', organizer: '...' },
+      { id: 2, title: '... ', organizer: '...' },
+      { id: 3, title: '...', organizer: '...' },
+      { id: 4, title: '...', organizer: '...' }
+    ]
   },
+
   getters: {
     catLength: state => {
       return state.categories.length
