@@ -18,14 +18,14 @@ export default {
       type: [Number, String],
       default: 24,
     },
-    computed: {
-      svg() {
-        return feather.icons[this.name].toSVG({
-          class: "icon",
-          width: this.width,
-          height: this.height,
-        });
-      },
+  },
+  computed: {
+    svg() {
+      return feather.icons[this.name].toSvg({
+        class: "icon",
+        width: this.width,
+        height: this.height,
+      });
     },
   },
 };
